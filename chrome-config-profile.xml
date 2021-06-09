@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!--Configuring browser settings -->
+    
+    <!--users can't save new passwords; previously saved passwords will still work.-->
+    <key>PasswordManagerEnabled</key>
+    <false/>
+    <!--Autofill never suggests, fills, nor saves address information that users submit while browsing the web-->
+    <key>AutofillAddressEnabled</key>
+    <false/>
+    <!--autofill never suggests or fills credit card information, nor will it save additional credit card information -->
+    <key>AutofillCreditCardEnabled</key>
+    <false />
+    <!--does not allow websites to check if the user has payment methods saved.-->
+    <key>PaymentMethodQueryEnabled</key>
+    <false/>
+    <!--displays a bookmark bar in Google Chrome-->
+    <key>BookmarkBarEnabled</key>
+    <true/>
+    <!--Action on startup-->
+    <key>RestoreOnStartup</key>
+    <integer>4</integer>
+    <!--URLs to open on startup-->
+    <key>RestoreOnStartupURLs</key>
+    <array>
+        <string>https://collegetrack.okta.com</string>
+        <string>https://collegetrack.org</string>
+    </array>
+    
+    <!--Creates a bookmark folder with useful links to resources -->
+    <key>ManagedBookmarks</key>
+    <array>
+        <dict>
+        <key>toplevel_name</key>
+        <string>CT Managed Bookmarks</string>
+        </dict>
+        <dict>
+            <key>url</key>
+            <string>https://sos.splashtop.com</string>
+            <key>name</key>
+            <string>SOS Splashtop Remote Support</string>
+        </dict>
+        <dict>
+            <key>url</key>
+            <string>https://collegetrack.org</string>
+            <key>name</key>
+            <string>College Track</string>
+        </dict>
+        <dict>
+            <key>url</key>
+            <string>https://collegetrack.okta.com</string>
+            <key>name</key>
+            <string>CT Okta Login</string>
+        </dict>
+        <dict>
+            <key>url</key>
+            <string>https://collegetrack.zendesk.com/hc/en-us/requests/new?ticket_form_id=150726</string>
+            <key>name</key>
+            <string>Submit a Support Ticket</string>
+        </dict>
+        <dict>
+            <key>url</key>
+            <string>https://collegetrack.zendesk.com/hc/en-us/articles/115003534303-Holidays-and-Payroll-Calendar</string>
+            <key>name</key>
+            <string>Holidays and Payroll Calendar</string>
+        </dict>
+    </array> 
+
+    <!--Installing Extensions: Zoom Scheduler, Okta Browser plugin-->
+    <key>ExtensionSettings</key>
+    <dict>
+        <key>*</key>
+        <dict>
+            <key>installation_mode</key>
+            <string>allowed</string>
+        </dict>
+        <!--Okta Extension-->
+        <key>glnpjglilkicbckjpbgcfkogebgllemb</key>
+        <dict>
+            <key>installation_mode</key>
+            <string>force_installed</string>
+            <key>toolbar_pin</key>
+            <string>force_pinned</string>
+            <key>update_url</key>
+            <string>https://clients2.google.com/service/update2/crx</string>
+        </dict>
+        <!--Zoom Scheduler-->
+        <key>kgjfgplpablkjnlkjmjdecgdpfankdle</key>
+        <dict>
+            <key>installation_mode</key>
+            <string>force_installed</string>
+            <key>toolbar_pin</key>
+            <string>force_pinned</string>
+            <key>update_url</key>
+            <string>https://clients2.google.com/service/update2/crx</string>
+        </dict>
+    </dict>
+</dict>
+</plist>

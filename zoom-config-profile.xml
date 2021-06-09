@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!--Default to login with SSO-->
+    <key>ZAutoSSOLogin</key>
+    <true/>
+    
+    <!-- preconfigured sso url-->
+    <key>ZSSOHost</key>
+    <string>collegetrack.zoom.us</string>
+    
+    <!--Disables login with FB-->
+    <key>nofacebook</key>
+    <true/>
+
+    <key>PackageRecommend</key>
+        <dict>
+            <!-- Automatically join VoIP-->
+            <key>ZAutoJoinVoip</key>
+            <true/>
+            <!--Disable Camera by default-->
+            <key>ZDisableVideo</key>
+            <true/>
+            <!--Enables HD Video by default-->
+            <key>ZUse720PByDefault</key>
+            <true/>
+            <!-- Enables " Always mute microphone when joining a meeting"-->
+            <key>MuteVoipWhenJoin</key>
+            <true/>
+            <!--Disables "Automatically enter full screen when viewing shared content"-->
+            <key>ZAutoFullScreenWhenViewShare</key>
+            <false/>
+            <!--Disable auto-hide toolbar)-->
+            <key>AutoHideToolbar</key>
+            <true/>
+        </dict>      
+</dict>
+</plist>
