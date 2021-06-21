@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo mv /Applications/Jamf-Firefox-Install/Firefox.app /Applications 
+
+sudo rm -r /Applications/Jamf-Firefox-Install/
