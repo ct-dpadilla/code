@@ -1,4 +1,7 @@
 #!/bin/sh
-sudo installer -pkg /Applications/Jamf-Acrobat-Install/Adobe*.pkg -target /Applications
+sudo mv /Applications/Jamf-Acrobat-Install/AcroRdrDC_2100520048_MUI.pkg /Applications/
+
+sudo installer -pkg /Applications/Acro*.pkg -target /Applications
 #sudo rm /Applications/Adobe*.pkg
 sudo rm -r /Applications/Jamf-Acrobat-install
+
